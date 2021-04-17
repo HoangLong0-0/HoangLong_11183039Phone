@@ -12,11 +12,11 @@ public class PhoneEntity {
     @Column(name = "name")
     private String name;
     @Column(name = "price")
-    private float price;
+    private int price;
     @Column(name = "brand_id")
     private int brand_id;
 
-    public PhoneEntity(String name, float price, int brand_id, String description) {
+    public PhoneEntity(String name, int price, int brand_id, String description) {
         this.name = name;
         this.price = price;
         this.brand_id = brand_id;
@@ -42,7 +42,7 @@ public class PhoneEntity {
     @Column(name = "description")
     private String description;
 
-    public void setPrice(float price) {
+    public void setPrice(int price) {
         this.price = price;
     }
 
@@ -70,7 +70,7 @@ public class PhoneEntity {
         this.name = name;
     }
 
-    public float getPrice() {
+    public int getPrice() {
         return price;
     }
 

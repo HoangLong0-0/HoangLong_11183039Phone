@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="/assets/custom.css">
 </head>
 <body>
+<%--Table phone--%>
 <table class="w3-table w3-striped">
     <tr>
         <th>ID</th>
@@ -32,6 +33,7 @@
             <td>${p.description}</td>
         </tr>
     </c:forEach>
+<%--    Add phone--%>
     <form action="addphone.jsp" method="post">
 
         <div class="container">
